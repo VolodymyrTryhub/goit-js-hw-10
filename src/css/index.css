@@ -16,3 +16,14 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6f6f6;
+}
+
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
