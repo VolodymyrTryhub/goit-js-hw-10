@@ -2,43 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackbar Page</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="page">
-    <a href="./1-timer.html">Go back</a>
+      <a class="back-link" href="./1-timer.html">Go back</a>
 
-    <h1>Snackbar</h1>
-    <main>
-      <div class="container">
-        <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">SNACKBAR</h1>
-      </div>
-    </main>
-    
-    <form class="form">
-      <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
-      </label>
+      <h1 class="main-title">Snackbar</h1>
 
-      <fieldset>
-        <legend>State</legend>
+      <form class="form">
         <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
+          Delay (ms)
+          <input type="number" name="delay" required />
         </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
 
-      <button type="submit">Create notification</button>
-    </form>
+        <fieldset>
+          <legend>State</legend>
+
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </div>
 
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>

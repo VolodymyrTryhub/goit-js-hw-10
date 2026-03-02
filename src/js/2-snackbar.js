@@ -9,6 +9,14 @@ form.addEventListener('submit', event => {
   const delay = Number(form.elements.delay.value);
   const state = form.elements.state.value;
 
+  if (delay <= 0) {
+    iziToast.error({
+      message: 'Delay must be greater than 0',
+      position: 'topRight',
+    });
+    return;
+  }
+
   createPromise(delay, state)
     .then(delay => {
       iziToast.success({
